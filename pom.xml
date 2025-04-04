@@ -15,6 +15,7 @@
     <jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
     <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
     <hadoop.version>3.3.0</hadoop.version>
+    <mrunit.version>1.1.0</mrunit.version>
     <!-- JaCoCo thresholds. Increase gradually as you add tests. -->
     <jacoco.unit-tests.limit.instruction-ratio>0%</jacoco.unit-tests.limit.instruction-ratio>
     <jacoco.unit-tests.limit.branch-ratio>0%</jacoco.unit-tests.limit.branch-ratio>
@@ -32,6 +33,21 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Apache MRUnit for testing MapReduce jobs -->
+    <dependency>
+      <groupId>org.apache.mrunit</groupId>
+      <artifactId>mrunit</artifactId>
+      <version>${mrunit.version}</version>
+      <classifier>hadoop2</classifier>
+      <scope>test</scope>
+    </dependency>
+    <!-- Mockito for mocking in tests -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.11.2</version>
       <scope>test</scope>
     </dependency>
     <!-- Hadoop Dependencies -->
