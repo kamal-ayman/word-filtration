@@ -63,6 +63,3 @@ The output will include the following metrics:
 ## Error Handling
 - If the wordlist files are missing or invalid, the program will throw an `IOException`.
 - Ensure the input text files are properly formatted and accessible.
-
-## License
-This project is licensed under the MIT License.
